@@ -1,5 +1,6 @@
 # CT-Scan-with-visible-light
 I developed a shadow-based CT scan technique (using visible light instead of X-ray) to reconstruct 3D model of transparent objects. 
+https://youtu.be/DClFSdOXJVw
 
 First you need to save all the Matlab files in the same folder. There is also a folder called "vid" including your videos which should be saved in the same folder. There is already one video saved in the "vid" folder called "vid2.mp4" which you can use as an example.
 
