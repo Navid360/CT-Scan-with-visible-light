@@ -1,7 +1,12 @@
 
 % To open the video file located in "vid" folder
-obj=VideoReader('.\vid\vid3.mp4');
+obj=VideoReader('.\vid\vid2.mp4');
 nFrames=obj.NumFrames;
+
+% between which two frames the full 360 happens?
+StartFrame = 60; 
+EndFrame = 60+776;
+LengthFrame = EndFrame-StartFrame;
 
 % Exporting folder - Create destination filename
 destinationFolder = '.\Sinograms';
@@ -56,10 +61,7 @@ dx = xv_right-xv_left; % length in x direction
 yt = yh_top; % y cordinate of top of frame
 dy = abs(yh_top-yh_bot); % length in y direction
 
-% between which two frames the full 360 happens?
-StartFrame = 60; 
-EndFrame = 60+776;
-LengthFrame = EndFrame-StartFrame;
+
 
 Sing = zeros(nFrames,dx,3);
 Sing = uint8(Sing);
